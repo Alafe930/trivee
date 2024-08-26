@@ -1,0 +1,45 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5rem;
+}
+
+.grid-no-gap{
+    gap: 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.grid-5{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    background-color: green;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.3s;
+    border-radius: 1px solid green;
+}
+
+.btn:hover, .btn:active{
+    background-color: rgb(1, 105, 1);
+}

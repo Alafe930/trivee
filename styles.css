@@ -1,0 +1,222 @@
+html{
+    font-size: 62.5%
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+
+img{
+    width: 100%;
+}
+
+/* h1, h2, p{
+    margin: 1rem 0;
+} */
+
+/* header */
+header{
+    background-color: rgb(224, 247, 224);
+    padding: 2rem 0
+}
+
+
+h1{
+    font-size: 3rem;
+    color: green;
+}
+
+ul{
+    font-size: 1.5rem;
+
+}
+
+a{
+    color: #fff;
+    background-color: green;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+}
+
+a:hover{
+    font-weight: bold;
+    background-color: rgb(1, 105, 1);
+}
+
+/* Hero Section */
+.Hero-section{
+    padding: 8rem 0;
+    background-color: rgb(224, 247, 224);
+    overflow: hidden;
+}
+
+.Hero-heading{
+    color: green;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.Hero-paragraph{
+    color: #2e2b2b;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.Hero-btn{
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+}
+
+.hero-text{
+    animation: slideInFromLeft 1s ease-in;
+}
+.hero-img{
+    animation: slideInFromRight 1s ease-in;
+}
+
+/* about section */
+.section-about{
+    padding: 2rem 0;
+    background-color: #f8f2f2;
+}
+
+.about{
+    align-self: flex-start;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.title-paragraph{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.span{
+    color: green;
+}
+
+.about-vision-container{
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+} 
+
+.about-trivee, .history-trivee{
+    font-size: 2rem;
+    text-align: center;
+}
+.about-trivee-paragraph, .history-trivee-paragraph{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.history-trivee-paragraph{
+    font-weight: bold;
+}
+
+.vision-list{
+    list-style: square;
+    padding-left: 2rem;
+}
+.vision-list li{
+    font-size: 1.4rem;
+    
+
+}
+
+/* hide text */
+.content{
+    display: none;
+}
+
+.content.active{
+    display: block;
+}
+
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromBottom {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@media(max-width: 768px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text{
+        animation: slideInFromTop 1s ease-in;
+    }
+    .hero-img{
+        animation: slideInFromBottom 1s ease-in;
+    }
+}
+
+@media(max-width: 500px) {
+    .container.flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
